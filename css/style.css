@@ -60,6 +60,7 @@ a:visited{
 /* requirement 10 */
 .gallery{
     display: flex;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -112,38 +113,42 @@ a:visited{
     
 }
 
-@media print{
-    /*Requirement 16*/
-    body{
-        background-image: none;
-        font-family: Arial, Helvatica, sans-serif;
-    }
-    /*Requirement 17*/
-    .nav{
-        width: 100%;
-    }
-    .nav_links{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    /*Requirement 18*/
-    .pricing{
-        align-items: flex-end;
-    }
-    /*Requirement 19*/
-    .card{
-        border: solid 2px #45ADDD;
-        flex-basis: 325px;
-    }
-    /*Requirement 20*/
-    .gallery{
-        display: none;
-    }
-    #gallery{
-        display: none;
-    }
-    /*Requirement 21*/
-    main li:nth-child(2):after {
-        content: ' \1F44D';
-    }
+
+@media print { 
+
+  /*Requirement 16*/
+  body{
+    background-image: none;
+    font-family: Arial, Helvatica, sans-serif;
+  }
+  /*Requirement 17*/
+  nav{
+    width: 100%;
+  }
+  .nav_links{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  /*Requirement 18*/
+  .price{
+    align-items: flex-end;
+  }
+  /*Requirement 19*/
+  .card{
+    border: solid 2px #45ADDD;
+    flex-basis: 325px;
+  }
+  /*Requirement 20*/
+  #gallery{
+    display: none;
+  }
+  .gallery{
+    display: none;
+  }
+  
+  /*Requirement 21*/
+  main li:nth-child(2):after {
+    content: ' \1F44D';
+  }
+  
 }
