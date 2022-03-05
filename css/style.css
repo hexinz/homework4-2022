@@ -113,6 +113,12 @@ a:visited{
     
 }
 
+@media screen and (prefers-reduced-motion: reduce){
+    /*Requirement 15*/
+    #logo{
+      animation: none;
+    }
+}
 
 @media print { 
 
