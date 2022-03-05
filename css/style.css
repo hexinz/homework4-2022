@@ -150,5 +150,8 @@ a:visited{
   main li:nth-child(2):after {
     content: ' \1F44D';
   }
-  
+
+  li header{
+    flex-direction: row;
+  }
 }
